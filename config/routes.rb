@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
+
+  devise_for :members
   resources :profiles
+
+  match 'members/dashboard' => 'members#dashboard', :via => :get
+
+  scope :members do
+    root :to => 'members#dashboard', as: :member_root
+  end
+
+  get 'members/dashboard'
 
   root 'pages#index'
 
