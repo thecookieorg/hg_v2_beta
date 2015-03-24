@@ -1,15 +1,67 @@
-<ul>
-	<li><%= link_to 'Home', root_path %></li>
-	<li><%= link_to 'Services', pages_services_path %></li>
-	<li><%= link_to 'About', pages_about_path %></li>
-	<li><%= link_to 'Contact', pages_contact_path %></li>
-	<% if member_signed_in? %>
-		<li>
-			<%= link_to('Logout', destroy_member_session_path, :method => :delete) %>
-		</li>
-	<% else %>
-		<li>
-			<%= link_to 'Login', new_member_session_path %>
-		</li>
-	<% end %>
-</ul>
+<!-- HEADER : begin -->
+			<header id="header">
+				<div class="header-inner">
+					<div class="container">
+
+						<!-- HEADER BRANDING : begin -->
+						<div class="header-branding">
+							<div class="branding-inner">
+
+								<!-- BRANDING LOGO : begin -->
+								<div class="brading-logo">
+									<%= link_to root_path do %>
+										<%= image_tag "logo.png" %>
+									<% end %>
+								</div>
+								<!-- BRANDING LOGO : end -->
+
+								<!-- BRANDING INFO : begin -->
+								<div class="brading-info">
+									<strong>Handyguyz</strong><br>
+									<em>Handyman Network</em>
+								</div>
+								<!-- BRANDING INFO : end -->
+
+							</div>
+						</div>
+						<!-- HEADER BRANDING : end -->
+
+						<!-- NAVIGATION TOGGLE : begin -->
+						<button class="header-navigation-toggle" type="button"><i class="fa fa-bars"></i></button>
+						<!-- NAVIGATION TOGGLE : end -->
+
+						<!-- HEADER NAVIGATION : begin -->
+						<div class="header-navigation">
+							<div class="navigation-inner">
+
+								<!-- HEADER MENU : begin -->
+								<nav class="header-menu">
+									<ul>
+										<li>
+											<%= link_to 'Home', root_path %>
+										</li>
+										<li>
+											<%= link_to 'Services', pages_services_path %>
+										</li>
+										<li><%= link_to 'About', pages_about_path %></li>	
+										<li><%= link_to 'Contact', pages_contact_path %></li>
+										<% if member_signed_in? %>
+											<li>
+												<%= link_to('Logout', destroy_member_session_path, :method => :delete) %>
+											</li>
+										<% else %>
+											<li>
+												<%= link_to 'Login', new_member_session_path %>
+											</li>
+										<% end %>
+									</ul>
+								</nav>
+								<!-- HEADER MENU : end -->
+							</div>
+						</div>
+						<!-- HEADER NAVIGATION : end -->
+
+					</div>
+				</div>
+			</header>
+			<!-- HEADER : end -->

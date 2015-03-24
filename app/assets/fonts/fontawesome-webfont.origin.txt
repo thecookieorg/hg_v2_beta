@@ -1,0 +1,3 @@
+Uri: http://demos.volovar.net/bluecollar.html/demo/library/fonts/fontawesome-webfont.svg?v=4.2.0
+File Name: C:\1 Marko\Downloaded-WWW\HandyGuyz\demos.volovar.net\bluecollar.html\demo\library\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml

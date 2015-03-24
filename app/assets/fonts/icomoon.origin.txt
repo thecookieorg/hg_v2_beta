@@ -1,0 +1,3 @@
+Uri: http://demos.volovar.net/bluecollar.html/demo/library/fonts/icomoon.svg?-mdbett
+File Name: C:\1 Marko\Downloaded-WWW\HandyGuyz\demos.volovar.net\bluecollar.html\demo\library\fonts\icomoon.svg
+Content Type: image/svg+xml
