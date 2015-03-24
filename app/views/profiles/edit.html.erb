@@ -1,6 +1,35 @@
-<h1>Editing Profile</h1>
+<!-- CORE : begin -->
+      <div id="core">
 
-<%= render 'form' %>
+        <!-- PAGE TITLE : begin -->
+        <div id="page-title" class="m-parallax">
 
-<%= link_to 'Show', @profile %> |
-<%= link_to 'Back', profiles_path %>
+          <!-- PAGE TITLE TOP : begin -->
+          <div class="page-title-top">
+            <div class="page-title-top-inner">
+
+              <!-- PAGE TITLE TEXT : begin -->
+              <div class="page-title-text">
+                <div class="container">
+                  <h1>Edit Your Profile</h1>
+                </div>
+              </div>
+              <!-- PAGE TITLE TEXT : end -->
+
+            </div>
+          </div>
+          <!-- PAGE TITLE TOP : end -->
+      </div>
+
+      <div class="container">
+
+          <!-- PAGE CONTENT : begin -->
+          <div id="page-content">
+
+			<%= render 'form' %>
+
+			<%= link_to 'Show', @profile %> |
+			<%= link_to 'Back', profiles_path %>
+		  </div>
+	  </div>
+	 </div>

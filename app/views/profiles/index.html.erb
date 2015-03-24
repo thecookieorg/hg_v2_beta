@@ -1,33 +1,62 @@
-<p id="notice"><%= notice %></p>
+<!-- CORE : begin -->
+      <div id="core">
 
-<h1>Listing Profiles</h1>
+        <!-- PAGE TITLE : begin -->
+        <div id="page-title" class="m-parallax">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Email</th>
-      <th>Address</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+          <!-- PAGE TITLE TOP : begin -->
+          <div class="page-title-top">
+            <div class="page-title-top-inner">
 
-  <tbody>
-    <% @profiles.each do |profile| %>
-      <tr>
-        <td><%= profile.name %></td>
-        <td><%= profile.description %></td>
-        <td><%= profile.email %></td>
-        <td><%= profile.address %></td>
-        <td><%= link_to 'Show', profile %></td>
-        <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
-        <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+              <!-- PAGE TITLE TEXT : begin -->
+              <div class="page-title-text">
+                <div class="container">
+                  <h1>My Profile</h1>
+                </div>
+              </div>
+              <!-- PAGE TITLE TEXT : end -->
 
-<br>
+            </div>
+          </div>
+          <!-- PAGE TITLE TOP : end -->
+      </div>
 
-<%= link_to 'New Profile', new_profile_path %>
+      <div class="container">
+
+          <!-- PAGE CONTENT : begin -->
+          <div id="page-content">
+            <hr class="c-divider m-transparent">
+            <p id="notice"><%= notice %></p>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Email</th>
+                  <th>Address</th>
+                  <th colspan="3"></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <% @profiles.each do |profile| %>
+                  <tr>
+                    <td><%= profile.name %></td>
+                    <td><%= profile.description %></td>
+                    <td><%= profile.email %></td>
+                    <td><%= profile.address %></td>
+                    <td><%= link_to 'Show', profile %></td>
+                    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+                    <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+
+            <br>
+
+            <%= link_to 'New Profile', new_profile_path %> | <%= link_to 'Back to Dashboard', members_dashboard_path %>
+</div>
+</div>
+</div>

@@ -1,25 +1,27 @@
 <!-- FOOTER : begin -->
 			<div id="footer" class="m-parallax">
 
-				<!-- FOOTER TOP : begin -->
-				<div class="footer-top">
-					<div class="footer-top-inner">
-						<div class="container">
+				<% unless member_signed_in? %>
+					<!-- FOOTER TOP : begin -->
+					<div class="footer-top">
+						<div class="footer-top-inner">
+							<div class="container">
 
-							<!-- CTA MESSAGE : begin -->
-							<div class="c-cta-message m-has-button">
-								<div class="cta-inner">
-									<h2>We Are <strong>Hiring</strong>!</h2>
-									<p>The copy warned the Little Blind Text, that where it came from it would have been rewritten.</p>
-									<p class="cta-button"><a href="contact.html" class="c-button m-size-medium">Contact Us</a></p>
-								</div>
+								
+									<!-- CTA MESSAGE : begin -->
+									<div class="c-cta-message m-has-button">
+										<div class="cta-inner">
+											<h2>We Are <strong>Hiring</strong>!</h2>
+											<p>The copy warned the Little Blind Text, that where it came from it would have been rewritten.</p>
+											<p class="cta-button"><a href="contact.html" class="c-button m-size-medium">Contact Us</a></p>
+										</div>
+									</div>
+									<!-- CTA MESSAGE : end -->
 							</div>
-							<!-- CTA MESSAGE : end -->
-
 						</div>
 					</div>
-				</div>
-				<!-- FOOTER TOP : end -->
+					<!-- FOOTER TOP : end -->
+				<% end %>
 
 				<!-- FOOTER INNER : begin -->
 				<div class="footer-inner">
